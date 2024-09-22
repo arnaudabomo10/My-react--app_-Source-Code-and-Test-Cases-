@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    margin: 0; /* Supprime les marges par défaut */
+    background-color: #f0f8ff; 
+  }
+  
+  header {
+    text-align: center; 
+  }
+  
+  h1 {
+    color: #87ceeb; 
+    font-size: 3rem; 
+  }

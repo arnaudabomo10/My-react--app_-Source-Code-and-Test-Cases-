@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  background-color: #f0f8ff; 
+}
+
+header {
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+.header-image {
+  width: 100%; 
+  max-width: 600px; 
+  height: auto; 
+  margin-bottom: 20px; 
+}
+
+h1 {
+  color: #87ceeb; 
+  font-size: 3rem;
+}
