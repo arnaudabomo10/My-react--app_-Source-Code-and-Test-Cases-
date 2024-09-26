@@ -1,0 +1,39 @@
+/* Style pour l'en-tête (logo + titre) */
+.header {
+    display: flex;
+    align-items: center;  
+    padding: 00px;
+    background-color: #8ce0f7;  /* Couleur turquoise */
+}
+
+/* Style pour le logo */
+.logo {
+    width: 140px;   
+    height: auto;  
+    margin-right: 15px;  
+}
+
+/* Style pour le titre */
+h1 {
+    font-size: 24px;
+    color: hsl(246, 36%, 31%); 
+    margin-right: auto;  
+}
+
+/* Optionnel : ajustement du bouton */
+.ant-btn-primary {
+    margin-left: auto;  
+}
+
+/* Style pour la barre de filtre */
+.filter-bar {
+    display: flex;  
+    padding: 09px; 
+    background-color: #f0f0f0; /* Couleur de fond pour la barre de filtre */
+}
+
+/* Style pour les entrées de filtre */
+.filter-input, .filter-select {
+    margin-right: 10px; /* Espacement entre les éléments de filtre */
+    flex: 1;  /* Les éléments prennent l'espace disponible */
+}
