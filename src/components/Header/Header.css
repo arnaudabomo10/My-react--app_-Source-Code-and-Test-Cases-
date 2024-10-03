@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between; /* Espacer le logo et le contenu */
+    align-items: center; /* Centrer verticalement le contenu */
+    padding: 10px 20px; /* Espacement interne */
+    background-color: #69cde8; /* Couleur d'arrière-plan */
+    border-bottom: 1px solid #d9d9d9; /* Bordure inférieure */
+  }
+  
+  .logo {
+    height: 120px; /* Hauteur de l'image du logo */
+  }
+  
+  h1 {
+    font-size: 23px; /* Taille du texte du titre */
+    margin: 0; /* Supprimer la marge */
+    color: #131313; /* Couleur du texte */
+  }
+  

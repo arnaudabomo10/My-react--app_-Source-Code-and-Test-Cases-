@@ -1,21 +1,23 @@
+/* App.css */
+
 /* Style pour l'en-tête (logo + titre) */
 .header {
     display: flex;
     align-items: center;  
     padding: 00px;
-    background-color: #8ce0f7;  /* Couleur turquoise */
+    background-color: #a2d6f4;  /* Couleur turquoise */
 }
 
 /* Style pour le logo */
 .logo {
-    width: 140px;   
+    width: 150px;   
     height: auto;  
     margin-right: 15px;  
 }
 
 /* Style pour le titre */
 h1 {
-    font-size: 24px;
+    font-size: 25px;
     color: hsl(246, 36%, 31%); 
     margin-right: auto;  
 }
@@ -28,7 +30,7 @@ h1 {
 /* Style pour la barre de filtre */
 .filter-bar {
     display: flex;  
-    padding: 09px; 
+    padding: 12px; 
     background-color: #f0f0f0; /* Couleur de fond pour la barre de filtre */
 }
 
@@ -36,4 +38,19 @@ h1 {
 .filter-input, .filter-select {
     margin-right: 10px; /* Espacement entre les éléments de filtre */
     flex: 1;  /* Les éléments prennent l'espace disponible */
+}
+
+/* Styles pour le tableau dans Layout1 */
+.table-container {
+    margin-top: 20px; /* Ajoute de l'espace au-dessus du tableau */
+    background-color: #ffffff; /* Couleur de fond du tableau */
+    padding: 20px; /* Ajoute de l'espace à l'intérieur du tableau */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre légère autour du tableau */
+}
+
+/* Style pour le tableau Ant Design */
+.ant-table {
+    width: 100%; /* Assure que le tableau prend toute la largeur */
+    margin: 0 auto; /* Centre le tableau */
 }

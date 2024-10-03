@@ -1,0 +1,71 @@
+// components/Menu/Layout.js
+import React, { useState } from 'react';
+import { Menu, Button } from 'antd';
+import DateComponent from '../Date';
+import LanguageSwitcher from '../LanguageSwitcher';
+
+const CustomLayout = () => {
+  const [current, setCurrent] = useState('mail');
+  const [language, setLanguage] = useState('EN');
+  const [selectedDate, setSelectedDate] = useState(null);
+
+  const handleLanguageChange = (lang) => {
+    setLanguage(lang);
+    console.log(`Langue sélectionnée : ${lang}`);
+  };
+
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+    console.log('Date sélectionnée:', date ? date.format('YYYY-MM-DD') : 'Pas de date');
+  };
+
+  const items = [
+    {
+      label: 'Search By Flight',
+      key: 'SubMenu',
+      children: [
+        { label: 'Option 1', key: 'search:1' },
+        { label: 'Option 2', key: 'search:2' },
+        { label: 'Option 3', key: 'search:3' },
+        { label: 'Option 4', key: 'search:4' },
+      ],
+    },
+    {
+      label: 'Search by Airport',
+      children: [
+        { label: 'Option 1', key: 'airport:1' },
+        { label: 'Option 2', key: 'airport:2' },
+        { label: 'Option 3', key: 'airport:3' },
+        { label: 'Option 4', key: 'airport:4' },
+      ],
+    },
+    {
+      key: 'dateComponent',
+      label: <DateComponent onDateChange={handleDateChange} />,
+    },
+    {
+      key: 'search',
+      label: (
+        <Button type="primary" onClick={() => console.log('Search clicked')}>
+          Recherche
+        </Button>
+      ),
+    },
+    {
+      key: 'languageSwitcher',
+      label: <LanguageSwitcher onLanguageChange={handleLanguageChange} />,
+      style: { marginLeft: 'auto' },
+    },
+  ];
+
+  const onClick = (e) => {
+    console.log('click ', e);
+    setCurrent(e.key);
+  };
+
+  return (
+    <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />
+  );
+};
+
+export default CustomLayout;
